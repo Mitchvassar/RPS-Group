@@ -13,13 +13,21 @@
   </div>
 
   <script type="text/javascript">
-    var compInput = 
-    var userInput = 
-    var 
-    // Whenever a key is pressed, alert "pressed a button".
-    document.onkeyup = function() {
-      alert("pressed a button");
-    };124
+    var rpsChoices = ["r", "p", "s"];
+    //var compInput = ;
+    //var userInput = ;
+    //var scoreWin = ;
+    //var scoreLoss = ;
+    //var scoreTie = ;
+
+    for (var i = 0; i < rpsInput.length; i++){
+      if(rpsInput[i].charAt(0) === "r" || rpsInput[i].charAt(1) === "p"  || rpsInput[i].charAt(2) === "s" ){
+        document.onkeyup = function() {
+          alert("User Selected" + rpsInput[i]);
+        };124;
+      }
+    } 
+
 
     // onkeyup = user presses key = outputs r/p/s
     // onkeyup = computer selects random
